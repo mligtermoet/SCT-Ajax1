@@ -12,7 +12,7 @@ function ajax(){
             responseHere.innerHTML = this.responseText;
         }
     };
-    let httpString = "form_2.php?firstName=" + firstName.value + "&age=" + age.value + "&lastName" + lastName.value + "&email=" + email.value;
+    let httpString = "form_2.php?firstName=" + firstName.value + "&age=" + age.value + "&lastName=" + lastName.value + "&email=" + email.value;
     console.log("httpString");
     xmlhttp.open("GET", httpString, true);
     xmlhttp.send();
